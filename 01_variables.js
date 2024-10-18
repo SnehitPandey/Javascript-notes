@@ -22,6 +22,6 @@ Because of issue in scope and functional scope
 
 // console.log(name);
 
-// to print all variable at once...
+// to print all variable at once....
 
 console.log([name,age,country,city,dataState])
