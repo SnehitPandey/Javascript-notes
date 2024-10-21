@@ -2,10 +2,10 @@
 
 //alert(3+3) // we are using nodejs not browser 
 
-console.log( 3 
-    + 3 ); // not a good practice code readability is important
+// console.log( 3 
+//     + 3 ); // not a good practice code readability is important
 
-console.log("Snehit");
+// console.log("Snehit");
 
 //Datatypes
 
@@ -21,5 +21,14 @@ let state;          // undefined
 //boolean = true / false
 //null = standalone value 
 //unidentified = value is not assigned
-//symbol = 
+//symbol = unique
+
+console.log(typeof name , age , islogged , state ); //tells the type of datatype stored variable is ..
+
+//object
+
+console.log(typeof undefined); //gives unidentified
+
+console.log(typeof null); //gives object (can be considered as one of the errors in js)
+
 
