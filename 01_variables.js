@@ -6,7 +6,7 @@ const name = "Snehit"
 let age = 20
 var country = "India"
 
-//variable can be declared just by declaring a name but not a good practice.
+//variable can be declared just by a name but not a good practice.
 city = "Delhi"
 
 //name = Peter (Not allowed will throw error ' Assignment to constant variable.')
