@@ -6,6 +6,11 @@ const name = "Snehit"
 let age = 20
 var country = "India"
 
+/*
+Do not prefer to use var 
+Because of issue in scope and functional scope
+*/
+
 //variable can be declared just by a name but not a good practice.
 city = "Delhi"
 
@@ -15,13 +20,14 @@ country = "france"
 city = "paris"
 let dataState; //will be considered as undefined
 
-/*
-Do not prefer to use var 
-Because of issue in scope and functional scope
-*/
 
+
+// printing the variables
+// log(shortcut or console.log)
 // console.log(name);
 
 // to print all variable at once....
-
 console.log([name,age,country,city,dataState])
+
+// to print in table format
+console.table([name,age,country,city,dataState])
