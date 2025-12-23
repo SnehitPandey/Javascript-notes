@@ -29,4 +29,23 @@ console.log(Math.abs(-10)); // returns absolute value 10
 console.log(Math.round(4.6)); // returns 5
 console.log(Math.floor(4.9)); // returns 4 bascially removes decimal part and gives the base integer
 console.log(Math.ceil(4.1)); // returns 5 basically adds 1 to the base integer if there is any decimal part
+console.log(Math.sqrt(16)); // returns 4 square root of the number
+console.log(Math.min(2, 5, 1, 8, -4)); // returns -4 find minimum value among the given numbers
+console.log(Math.max(2, 5, 1, 8, -4)); // returns 8 find maximum value among the given numbers
 
+console.log(Math.random()); // returns a random number between 0 and 1
+console.log(Math.floor(Math.random() * 10) + 1); // returns a random integer between 1 and 10
+console.log(Math.floor(Math.floor(Math.random() * 10) + 1));// returns a random integer between 1 and 10 with is the base integer   
+// Math.random() generates a random decimal between 0 and 1
+// Multiplying by 10 scales it to 0-10
+// Math.floor removes the decimal part, giving 0-9
+// Adding 1 shifts the range to 1-10
+
+const min = 5;
+const max = 15;
+
+console.log(Math.floor((Math.random() * (max - min + 1))) + min); // returns random integer between min and max
+// Math.random() generates a random decimal between 0 and 1
+// Multiplying by (max - min + 1) scales it to the desired range size
+// Math.floor removes the decimal part
+// Adding min shifts the range to start from min value
