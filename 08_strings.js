@@ -29,4 +29,28 @@ console.log(gameName.indexOf('C'));
 // these are some common string methods 
 // Strings methods do not modify the original string, they return a new string
 
+const newString= gameName.substring(0,5);// extracts part of the string from index 0 to 5 where n is not included printing only n-1 
+console.log(newString); //won't worn in negative indexes
+
+
+const newStringOne =  new String("     Hello World     ");
+console.log(newStringOne.trim(  ));//removes white spaces
+
+
+const newString2 = gameName.slice(0,4);// similar to substring but can take negative indexes 
+// when we use negative indexes it starts from end of string
+
+
+const url = "https://www.example.com/path20%to/resource?query=123#section";
+console.log(url.replace("20%","-"));// replaces 20% with -
+
+console.log(url.includes("example"));// checks if string contains example returns boolean
+
+const superString = new String("Dark-knight-rises");
+console.log(superString.split("-"));// splits string into array based on separator 
+
+console.dir(String.prototype); // shows all string methods in browser console
+
+// There are many more string methods available in JavaScript
+// search mdn docs
 

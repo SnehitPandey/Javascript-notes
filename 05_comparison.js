@@ -1,6 +1,6 @@
 /*
   JavaScript Comparison Notes
-
+//coersion means converting one data type to another data type
   Key operators:
   - ==  : loose equality (performs type coercion)
   - === : strict equality (no type coercion)

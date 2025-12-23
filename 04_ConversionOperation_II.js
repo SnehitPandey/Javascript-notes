@@ -1,7 +1,7 @@
 //***********************Operation************************** */
 
 let value = 3
-let negValue = -value;
+let negValue = -value;// unary negation operator gives negative of the value
 // console.log(negValue);
 
 // console.log(2+2);

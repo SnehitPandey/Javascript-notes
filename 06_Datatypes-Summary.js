@@ -29,7 +29,7 @@ let myobj = {
     age: 21,
 }
 
-const mydunction = function(){
+const myfunction = function(){
     console.log("This is a function");
 }
 
