@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Content goes here -->
+    <h1 id="heading">press the button</h1>
+    <button onclick="change_text()">PRESS</button>
+
+    <script>
+      function change_text(){
+          document.getElementById("heading").textContent="you clicked the button";
+      }
+      for(i=0; i<5; i++){
+          console.log("number: ", i)
+      }
+    </script>
+    <script>
+      console.log("hello world");
+    </script>
+  </body>
+</html>

@@ -30,7 +30,7 @@ console.log(gameName.indexOf('C'));
 // Strings methods do not modify the original string, they return a new string
 
 const newString= gameName.substring(0,5);// extracts part of the string from index 0 to 5 where n is not included printing only n-1 
-console.log(newString); //won't worn in negative indexes
+console.log(newString); //won't work in negative indexes
 
 
 const newStringOne =  new String("     Hello World     ");
