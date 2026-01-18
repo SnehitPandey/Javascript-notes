@@ -1,3 +1,5 @@
+//A higher-order function in JavaScript is a function that does at least one of the following: it takes one or more functions as arguments (callback functions), or it returns a function as its result
+
 //for of
 
 // ["",""]
