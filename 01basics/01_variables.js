@@ -3,7 +3,7 @@
 const name = "Snehit"
 
 //two ways to assign variable
-let age = 20
+let age = 20 // dowsn't work with hoisting
 var country = "India"
 
 /*

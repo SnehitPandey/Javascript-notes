@@ -22,6 +22,9 @@ const regularUser = {
 //console.log(regularUser.fullname.userfullname.firstname); // accessing nested object value
 //console.log(regularUser.fullname?.userfullname?.lastname); // accessing nested object value using optional chaining checks for null or undefined at each level
 //console.log(regularUser['fullname']['userfullname']['lastname']); // accessing nested object value using bracket notation
+
+
+
 const obj1 ={1:"a",2:"b"}; 
 const obj2 ={3:"c",4:"d"};
 
@@ -80,3 +83,60 @@ navbar(companyname = "xyz"); // default parameter value using object destructuri
 //     "isloggedin": false
 // }
 
+
+
+let exObj = {
+     name: "harsh",
+     age:26,
+     email: "test@mail.com",
+     addresses:{
+        city: "Delhi",
+     },
+};
+
+//optional chaining -------------------------
+
+exObj?.addresses?.city // used for making situation give response instead of error ..
+
+
+// deep clone ----------------------
+
+//when an object converts to nested object and we copy it usig spread opreator the top values are coppied but the nested values are passed as
+// reference meaning the real value it passed and it we change some thing the original nested value changes so we use deep clone 
+
+// ex: - let obj2= {...obj};
+// obj2.addresses.city="Indore"
+
+let exObj2 = JSON.parse(JSON.stringify(exObj));  // best way to copy nested obj 
+// JSON.stringify converts the obj to string then
+//JSON.parse converts the string to its original form 
+//so now the object which exObj2 gets a proper copy of the original object because it was parsed from string not making reference
+
+
+
+const user ={
+    "first-name": "Master",
+};
+
+//let firstName = user["first-name"];
+
+// other way
+
+let{"first-name": firstName} = user
+
+console.log(firstName)
+
+const language ={
+    title: "JavaScript",
+    duration:"4 weeks"
+};
+
+Object.entries(language).forEach(function (val){
+    conosle.log(val[0]+":"+ val[1]);
+})
+
+//future topic 
+
+// for (const key in language) {
+//     console.log(`${key}:${language[key]}`);
+// }
